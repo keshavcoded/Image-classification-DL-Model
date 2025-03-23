@@ -1,18 +1,18 @@
-﻿1. **Workflow:** 
+**Workflow:** 
 
 ![](./images/Aspose.Words.0d955de0-b154-4c20-864e-acbd0426b494.001.png)
 
 **Workflow**
 
-2. **Data preprocessing:** 
+**Data preprocessing:** 
 
 This step is done in order to make the model learn the features easy and efficient. For preprocessing, data augmentation techniques of rotation and fill mode are used in Image Data Generator. Resizing of the image is done with dimensions as 224 x 224 before sending the image to the model for training and predicting.  
 
-3. **Configuring ResNet50:** 
+**Configuring ResNet50:** 
 
 CNN works by detecting and extracting features in image by applying filters. The obtained features are then used for class prediction. ResNet50 is one such type of CNN consisting of 50 hidden functional layers like convolution, batch-normalization, global average pooling, flatten and dense. In addition to these layers dropout is also used to avoid overfitting problems. 
 
-4. **Functional layers used: Convolution**  
+**Functional layers used: Convolution**  
 
    This layer applies 3\*3 filter (also called kernel) to input image of the dataset that end up with activation. Series of activations generate a feature map.  
 
@@ -82,15 +82,15 @@ Softmax activation is used at the last output layer to convert number of output 
 
 **Standard ResNet Architecture** 
 
-5. **Training:** 
+**Training:** 
 
 The model has been trained for 600 images from 4 different datasets. Adam is used as optimizer and binary cross entropy as loss function. The model is iterated for 100 epochs and 62 steps per epoch with learning rate being 1e-3. Batch size is set to 8. The test dataset is further splitted for cross validation and performance metrics of training and validation are obtained. 
 
-6. **Testing:**  
+**Testing:**  
 
 In the considered dataset of 600 images the test size is set to 0.2 and for validation the test data is further splitted by setting the size to 0.5. This means 120 images out of 600 will be used for testing. Further out of 120 images, 60 images will be used for validation. 
 
-7. **Loading model for manual testing and prediction:** 
+**Loading model for manual testing and prediction:** 
 
 The saved model file with the file extension .h5 is loaded.        **Preprocessing Input:** 
 
