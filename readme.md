@@ -88,7 +88,7 @@ The model has been trained for 600 images from 4 different datasets. Adam is use
 
 **Testing:**  
 
-In the considered dataset of 600 images the test size is set to 0.2 and for validation the test data is further splitted by setting the size to 0.5. This means 120 images out of 600 will be used for testing. Further out of 120 images, 60 images will be used for validation. 
+In the given dataset of 600 images, 20% (i.e., 120 images) are allocated for testing. From these 120 test images, half (i.e., 60 images) are further used for validation.
 
 **Loading model for manual testing and prediction:** 
 
