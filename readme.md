@@ -6,7 +6,7 @@
 
 **Data preprocessing:** 
 
-This step is done in order to make the model learn the features easy and efficient. For preprocessing, data augmentation techniques of rotation and fill mode are used in Image Data Generator. Resizing of the image is done with dimensions as 224 x 224 before sending the image to the model for training and predicting.  
+This step is done in order to make the model learn the features easy and efficient. For pre-processing, data augmentation techniques of rotation and fill mode are used in Image Data Generator. Resizing of the image is done with dimensions as 224 x 224 before sending the image to the model for training and predicting.  
 
 **Configuring ResNet50:** 
 
